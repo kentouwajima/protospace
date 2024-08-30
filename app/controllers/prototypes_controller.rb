@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :set_prototype, only: [:edit, :update, :show,]
+  before_action :set_prototype, only: [:edit, :update, :show, :destroy]
   before_action :move_to_index, only: [:edit, :update, :destroy]
   def index
     @prototype = Prototype.all
